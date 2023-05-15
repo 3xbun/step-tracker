@@ -14,15 +14,19 @@ class BottomNavigation extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            const Icon(
-              Icons.add_chart,
-            ),
+            IconButton(
+                icon: const Icon(
+                  Icons.local_fire_department_sharp,
+                ),
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/pedometer');
+                }),
             const Icon(Icons.search),
             Transform.translate(
               offset: const Offset(0, -15),
               child: GestureDetector(
                 onTap: () {
-                  //Navigator.of(context).pushReplacementNamed('/');
+                  Navigator.of(context).pushNamed('/');
                 },
                 child: Container(
                   padding: const EdgeInsets.all(13),

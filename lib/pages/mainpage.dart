@@ -1,7 +1,7 @@
-import 'package:fitness_tracker/pages/register.dart';
+import 'package:fitness_tracker/pages/register/register.dart';
 import 'package:flutter/material.dart';
 
-import 'login/login.dart';
+import './login/login.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
