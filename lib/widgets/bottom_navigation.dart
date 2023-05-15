@@ -8,7 +8,7 @@ class BottomNavigation extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 60,
-      color: Colors.white,
+      color: const Color(0xfff8f8f8),
       child: IconTheme(
         data: const IconThemeData(color: Color(0xffabadb4)),
         child: Row(
@@ -19,10 +19,10 @@ class BottomNavigation extends StatelessWidget {
             ),
             const Icon(Icons.search),
             Transform.translate(
-              offset: const Offset(0, -20),
+              offset: const Offset(0, -15),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.of(context).pushReplacementNamed('/');
+                  //Navigator.of(context).pushReplacementNamed('/');
                 },
                 child: Container(
                   padding: const EdgeInsets.all(13),
@@ -50,12 +50,13 @@ class BottomNavigation extends StatelessWidget {
               ),
             ),
             const Icon(Icons.date_range),
-            GestureDetector(
-              onTap: () {
-                // Navigator.of(context).pushNamed('/details');
-              },
-              child: const Icon(Icons.settings),
-            ),
+            IconButton(
+                icon: const Icon(
+                  Icons.logout,
+                ),
+                onPressed: () {
+                  Navigator.of(context).pushReplacementNamed('/login');
+                }),
           ],
         ),
       ),

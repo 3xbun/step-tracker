@@ -1,5 +1,7 @@
 import 'package:fitness_tracker/pages/details/details.dart';
 import 'package:fitness_tracker/pages/home/home.dart';
+import 'package:fitness_tracker/pages/login/login.dart';
+import 'package:fitness_tracker/pages/register.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -31,8 +33,10 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomePage(),
         '/details': (context) => const DetailsPage(),
+        '/login': (context) => const LoginPage(),
+        '/register': (context) => const RegisterPage()
       },
-      initialRoute: '/',
+      initialRoute: '/login',
     );
   }
 }

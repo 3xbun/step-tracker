@@ -24,7 +24,7 @@ class _CurrentProgramsState extends State<CurrentPrograms> {
         Padding(
           padding: const EdgeInsets.symmetric(
             vertical: 20,
-            horizontal: 50,
+            horizontal: 30,
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

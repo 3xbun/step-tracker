@@ -26,7 +26,7 @@ class AppHeader extends StatelessWidget {
             ),
           ),
           const Positioned(
-            top: 20,
+            top: 35,
             right: 40,
             child: CircleAvatar(
               minRadius: 25,

@@ -11,7 +11,6 @@ class Info extends StatelessWidget {
         Stats(value: '345', unit: 'kcal', label: 'Calories'),
         Stats(value: '3.6', unit: 'km', label: 'Distance'),
         Stats(value: '1.5', unit: 'hr', label: 'Hours'),
-        Stats(value: 'Bangkok', unit: '-', label: 'Location'),
       ],
     );
   }
